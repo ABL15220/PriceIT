@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}PriceIT - Home{% endblock %}
+
+{% block content %}
+
+    <h1>Welcome to PriceIT</h1>
+
+    <h2>Item Price Checker</h2>
+
+            <form method="POST" action="{{ url_for('price') }}" id="price_check_form">
+                <input type="text" name="item" placeholder="Enter item name">
+                <input type="submit" value="Check Prices">
+            </form>
+
+
+{% endblock %}

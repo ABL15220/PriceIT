@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}PriceIT - Price{% endblock %}
+
+{% block content %}
+
+    <h1>PriceIT - Price Checker</h1>
+
+    {% if stats %}
+        <h2>Results for "{{ stats['item'] }}":</h2>
+        <p>Min price: ${{ stats['min'] }}</p>
+        <p>Max price: ${{ stats['max'] }}</p>
+        <p>Average price: ${{ stats['average'] }}</p>
+    {% endif %}
+
+{% endblock %}
+    
