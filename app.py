@@ -3,7 +3,7 @@ import requests
 
 app = Flask(__name__)
 
-ebay_api_id = 'your_ebay_api_id_here'
+ebay_api_id = 'Alexandr-PriceIT-SBX-60bbd31c9-23a29497'
 
 
 def get_price_stats(item):
